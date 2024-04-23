@@ -14,3 +14,4 @@ class EventConsumer(AsyncWebsocketConsumer):
         data = json.loads(text_data)
         # Dispatch Celery task to handle the event asynchronously
         process_event.delay(data)
+#dsxdcfyvbnm,
